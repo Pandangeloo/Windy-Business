@@ -26,23 +26,36 @@
 <p>Fyll i formuläret nedan så hör vi av oss.</p>
 
 
-<form action="">
+<form method="get">
 
-<label for="fname">Förnamn<input type="text" name="" id=""></label> <br>
-<label for="lname">Efternamn<input type="text" name="" id=""></label>
+<label for="fname">Förnamn
+    <input type="text" name="fname" id="fname" pattern="[a-öA-Ö]+" required>
 
-<label for="mail">E-postadress <input type="text"></label>
-<label for="phonenumber">Telefonnummer <input type="text"></label>
+</label> <br>
 
-<label for="term1">Termin 1 (v4-v12)<input type="radio" name="term1"></label>
-<label for="term1">Termin 2 (v13-v21)<input type="radio" name="term2"></label>
-<label for="term1">Termin 3 (v33-v41)<input type="radio" name="term3"></label>
-<label for="term1">Termin 4 (v42-v50)<input type="radio" name="term4"></label>
+
+<label for="lname">Efternamn
+    <input type="text" name="lname" id="lname" pattern="[a-öA-Ö]+" required>
+</label>
+
+<label for="email">E-postadress 
+    <input type="email" id="email" name="email" required placeholder="exempel@domän.se" pattern="[a-öA-Ö0-9._%+\-]+@[a-ö0-9.\-]+\.[a-z]{2,}$">
+</label>
+
+    <label for="phonenumber">Telefonnummer 
+        <input type="tel" id="phonenumber" name="phonenumber" pattern="\+46[0-9]{9,}" placeholder="+46987654321" required>
+    </label>
+
+<p>Välj termin du vill boka dig till</p>
+ <label for="term1">Termin 1 (v4-v12)<input type="radio" name="terms" id="term1" required></label>
+<label for="term2">Termin 2 (v13-v21)<input type="radio" name="terms" id="term2"></label>
+<label for="term3">Termin 3 (v33-v41)<input type="radio" name="terms" id="term3"></label>
+<label for="term4">Termin 4 (v42-v50)<input type="radio" name="terms" id="term4"></label>
 
 
 <label for="courses">Kurs</label>
-<select name="courses" id="courses">
-    <option value="select">Välj en kurs</option>
+<select name="courses" id="courses" required>
+    <option value="" disabled selected>Välj en kurs</option>
     <option value="sax">Sax i Stan</option>
     <option value="flute">Luftigt Ljud</option>
     <option value="piccolo">Piccolo Pop</option>
@@ -53,7 +66,7 @@
 </select>
 
 
-<label for="textarea">Är det något annat du vill att vi ska veta? <textarea name="message" id="message"></textarea></label>
+<label for="textarea">Övrigt<textarea name="message" id="message" placeholder="Är det något annat du vill att vi ska veta? "></textarea></label>
     
 
 
