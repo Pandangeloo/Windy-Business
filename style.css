@@ -3,10 +3,14 @@ background-color:#2f5972;
 color: black    ;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 line-height: 1.6;
+max-width: 1300px;
+margin: 0 auto;
+
 }
 
 section
 {
+    
     background-color: #b6c9d4;
     text-align: center;    
     border-radius: 5px;
@@ -26,8 +30,10 @@ header {
     
 }
 
-.logo {width: 20%;}
-
+.logo {
+    width: 20%;
+max-width: 250px;}
+    
 .menu    {
     display: flex;
     flex-wrap: wrap; 
@@ -84,8 +90,28 @@ border-radius: 5px;}
 
 
 
+/* Course-Overview */
 
 
+
+section ul {
+    list-style-position: inside;
+
+}
+
+
+
+
+
+/*c-reg*/
+
+form {
+
+    background-color: #b6c9d4;       
+    border-radius: 5px;
+    padding-bottom: 20px;
+   
+}
 
 
 
