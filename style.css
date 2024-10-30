@@ -92,11 +92,48 @@ border-radius: 5px;}
 
 /* Course-Overview */
 
-
-
+/*Gör listan rak och större text*/
 section ul {
-    list-style-position: inside;
+    text-align: start;
+    font-size: larger;  
 
+}
+
+/*Gör ordet Termin i fet stil*/
+section ul li span:first-child {
+    font-weight: bold;}
+
+.terms-container {
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-around;
+}
+
+/*Ger textrutan en bredd*/
+.terms-container p {    
+    max-width: 350px;    
+}
+
+/*Design av tabellen*/
+.table-styling {
+    border-collapse: collapse; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+   
+}
+
+.table-styling th, .table-styling td {
+    border: solid black;
+}
+
+.table-styling th { /*översta raden*/
+    background-color:#2f5972;
+}
+
+/*När man hovrar över tabellen så ändras bakgrunden - i framtiden göra klickbar?*/
+.table-styling tbody tr:hover {
+    background-color:#2f5972;
 }
 
 
